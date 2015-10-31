@@ -85,6 +85,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bot\RegistroPontoBot.cs" />
+    <Compile Include="Commands\RegisterCommand.cs" />
+    <Compile Include="Interface\IBot.cs" />
     <Compile Include="Interface\IBotCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

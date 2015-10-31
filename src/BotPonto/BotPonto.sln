@@ -13,9 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotPonto.CrossCuting", "BotPonto.CrossCuting\BotPonto.CrossCuting.csproj", "{C00B9277-730A-4EDC-AB0E-8DA089678B7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotPonto.Service.Console", "BotPonto.Service.Console\BotPonto.Service.Console.csproj", "{5D614C46-AF6A-4BDC-9520-47DD3502F93D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotPonto.IoC", "BotPonto.IoC\BotPonto.IoC.csproj", "{16EF4D35-35E4-4E59-A0FB-1039D3E020C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotPonto.Service.WPFApplication", "BotPonto.Service.WPFApplication\BotPonto.Service.WPFApplication.csproj", "{1B1BE709-C61B-46E5-BFE5-3A89989B7560}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotPonto.Service.ConsoleApp", "BotPonto.Service.ConsoleApp\BotPonto.Service.ConsoleApp.csproj", "{5D614C46-AF6A-4BDC-9520-47DD3502F93D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,14 @@ Global
 		{C00B9277-730A-4EDC-AB0E-8DA089678B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C00B9277-730A-4EDC-AB0E-8DA089678B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C00B9277-730A-4EDC-AB0E-8DA089678B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16EF4D35-35E4-4E59-A0FB-1039D3E020C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16EF4D35-35E4-4E59-A0FB-1039D3E020C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16EF4D35-35E4-4E59-A0FB-1039D3E020C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16EF4D35-35E4-4E59-A0FB-1039D3E020C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5D614C46-AF6A-4BDC-9520-47DD3502F93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5D614C46-AF6A-4BDC-9520-47DD3502F93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D614C46-AF6A-4BDC-9520-47DD3502F93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D614C46-AF6A-4BDC-9520-47DD3502F93D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B1BE709-C61B-46E5-BFE5-3A89989B7560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B1BE709-C61B-46E5-BFE5-3A89989B7560}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B1BE709-C61B-46E5-BFE5-3A89989B7560}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B1BE709-C61B-46E5-BFE5-3A89989B7560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,7 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{800C795B-4E28-4542-99DD-72EFE6FBB519} = {3DF0C4BA-6948-433C-8D72-7B39E5C64B5C}
 		{C00B9277-730A-4EDC-AB0E-8DA089678B7F} = {44151B99-7339-454F-A5AA-41329409E741}
+		{16EF4D35-35E4-4E59-A0FB-1039D3E020C8} = {44151B99-7339-454F-A5AA-41329409E741}
 		{5D614C46-AF6A-4BDC-9520-47DD3502F93D} = {EBC9F715-BEF0-4B9F-A34F-EA133BCCEA74}
-		{1B1BE709-C61B-46E5-BFE5-3A89989B7560} = {EBC9F715-BEF0-4B9F-A34F-EA133BCCEA74}
 	EndGlobalSection
 EndGlobal

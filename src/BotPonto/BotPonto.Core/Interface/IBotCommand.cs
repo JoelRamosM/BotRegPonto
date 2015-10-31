@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System.Threading.Tasks;
 
 namespace BotPonto.Core.Interface
 {
     public interface IBotCommand
     {
         string Command { get; }
-        List<string> Parameters { get; }
+
+        void Run(string chartId, params string[] arguments);
+        Task RunAsync(string chartId, params string[] arguments);
     }
 }
