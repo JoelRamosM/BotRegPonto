@@ -1,0 +1,8 @@
+/registrarPIS - parametro PIS do funcionário, ex: /registrar 999999999999;
+
+/registros - retornar registros do ponto por dia, parametro opcional dia com formato dd/mm/yyyy, sem parametro retorna registros de hoje;
+
+/notificação - parametros SIM ou NÃO(para não receber mais notificações), default SIM;
+
+/sair - não recebera mais notificações nem podera mais solicitar informações;
+ 

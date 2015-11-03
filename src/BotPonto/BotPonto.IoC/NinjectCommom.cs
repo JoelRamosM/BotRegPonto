@@ -15,6 +15,6 @@ namespace BotPonto.IoC
             return _kernel;
         }
         private static void ConfigureKernel(IKernel kernel)
-            => kernel.Load<DefaultModule>();
+            => kernel.Load<DefaulWebModule>();
     }
 }

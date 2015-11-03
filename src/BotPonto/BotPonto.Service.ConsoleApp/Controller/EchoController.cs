@@ -13,10 +13,6 @@ namespace BotPonto.Service.ConsoleApp.Controller
         }
 
         [HttpGet]
-        public string Echo()
-        {
-           _bot.RunCommand("1", "register");
-            return "Teste";
-        }
+        public string Echo() => "Teste";
     }
 }

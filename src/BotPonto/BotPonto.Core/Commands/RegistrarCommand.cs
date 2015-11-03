@@ -1,17 +1,19 @@
 ﻿using System.Threading.Tasks;
 using BotPonto.Core.Interface;
+using Telegram.Bot.Types;
 
 namespace BotPonto.Core.Commands
 {
-    public class RegisterCommand : IBotCommand
+    public class RegistrarCommand : IBotCommand
     {
-        public string Command => "register";
-        public void Run(string chartId, params string[] arguments)
+        public string Command => "/registrar";
+
+        public string Run(Update update)
         {
             throw new System.NotImplementedException();
         }
 
-        public Task RunAsync(string chartId, params string[] arguments)
+        public Task<string> RunAsync(Update update)
         {
             throw new System.NotImplementedException();
         }

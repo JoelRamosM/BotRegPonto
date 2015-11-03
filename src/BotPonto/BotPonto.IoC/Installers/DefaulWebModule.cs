@@ -1,5 +1,7 @@
 ﻿using BotPonto.Core.Bot;
 using BotPonto.Core.Interface;
+using BotPonto.Core.Interface.Services;
+using BotPonto.Core.Services;
 using BotPonto.CrossCuting;
 using Ninject.Extensions.Conventions;
 using Ninject.Modules;
@@ -7,7 +9,7 @@ using Ninject.Web.Common;
 
 namespace BotPonto.IoC.Installers
 {
-    public class DefaultModule : NinjectModule
+    public class DefaulWebModule : NinjectModule
     {
         public override void Load()
         {
@@ -15,14 +17,16 @@ namespace BotPonto.IoC.Installers
                 .SelectAllClasses()
                 .BindAllInterfaces()
                 .Configure(conf => conf.InRequestScope()));
-            Kernel.Bind(syntax => syntax.FromAssemblyContaining<IBotCommand>()
-                .SelectAllClasses()
-                .BindDefaultInterfaces()
-                .Configure(conf => conf.InRequestScope()));
-
             Kernel.Unbind<IBot>();
+            Kernel.Unbind<IBotApiService>();
+
+            Kernel.Bind<IBotApiService>()
+                .To<BotApiService>().InRequestScope()
+                .WithConstructorArgument("token", BotConfiguration.Token);
+
             Kernel.Bind<IBot>()
                 .To<RegistroPontoBot>()
+                .InRequestScope()
                 .WithConstructorArgument("token", BotConfiguration.Token)
                 .WithConstructorArgument("webHookUrl", BotConfiguration.WebHook);
         }

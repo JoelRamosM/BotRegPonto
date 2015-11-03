@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Telegram.Bot.Types;
 
 namespace BotPonto.Core.Interface
 {
@@ -6,7 +7,8 @@ namespace BotPonto.Core.Interface
     {
         string Command { get; }
 
-        void Run(string chartId, params string[] arguments);
-        Task RunAsync(string chartId, params string[] arguments);
+        string Run(Update update);
+
+        Task<string> RunAsync(Update update);
     }
 }

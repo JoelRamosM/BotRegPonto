@@ -4,5 +4,6 @@
     {
         public static string Token { get; set; }
         public static string WebHook { get; set; }
+        public static bool WebHookConfigured { get; set; }
     }
 }
